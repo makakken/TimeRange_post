@@ -58,8 +58,16 @@ class TimeRange_post {
 		echo '</table>'.PHP_EOL;
 		echo '</div>';
 	}
+
+	public function savepost_HOOK($post_id) {
+		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+			return;
+		update_post_meta($post_id, 'post_start_date',strtotime ($_POST['post_start_date']));
+		update_post_meta($post_id, 'post_end_date',strtotime ($_POST['post_end_date']));
+	}
 }
 
 //Hooks
 add_action( 'add_meta_boxes', array('TimeRange_post','add_meta_box_HOOK') );
+add_action( 'save_post', array('TimeRange_post','savepost_HOOK') );
 ?>
