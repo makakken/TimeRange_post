@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: TimeRange - Post
-Plugin URI:  http://makakken.de/wordpress/timerangepost
+Plugin URI:  https://github.com/makakken/TimeRange_post
 Description: This Plugin adds Start/End - Timestamps as Post-Meta to Posts.
 Version:     0.0.1
 Author:      Stephan Kropop
