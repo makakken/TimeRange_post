@@ -19,7 +19,7 @@ jQuery(function() {
         buttonText: "<span class='dashicons dashicons-calendar-alt'></span>",
       showMonthAfterYear: false,
       showOn: 'both',
-      dateFormat:'d.mm.yyyy'
+      dateFormat:'dd.mm.yy'
     });
 	jQuery('#ui-datepicker-div').addClass('TimeRange-Post');
   }
