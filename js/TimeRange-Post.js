@@ -3,7 +3,7 @@ jQuery(function() {
       jQuery('[type="date"]').datepicker({
         prevText: '<span class="dashicons dashicons-arrow-left"></span>', prevStatus: '',
         prevJumpText: '&#x3c;&#x3c;', prevJumpStatus: '',
-        nextText: '<span class="dashicons dashicons-arrow-right"></span>;', nextStatus: '',
+        nextText: '<span class="dashicons dashicons-arrow-right"></span>', nextStatus: '',
         nextJumpText: '&#x3e;&#x3e;', nextJumpStatus: '',
         currentText: 'heute', currentStatus: '',
         todayText: 'heute', todayStatus: '',
