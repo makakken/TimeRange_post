@@ -36,10 +36,10 @@ class TimeRange_post {
 		$start_date = $end_date = date('Y-m-d', time());
 		// Get Date Values from DB
 		if( intval(get_post_meta($post->ID,'post_start_date',true)) > 0 ) {
-			$start_date = date('Y-m-d',intval(get_post_meta($post->ID,'post_start_date',true)));
+			$start_date = date('d.m.Y',intval(get_post_meta($post->ID,'post_start_date',true)));
 		} 
 		if( intval(get_post_meta($post->ID,'post_end_date',true)) > 0 ) {
-			$end_date = date('Y-m-d',intval(get_post_meta($post->ID,'post_end_date',true)));
+			$end_date = date('d.m.Y',intval(get_post_meta($post->ID,'post_end_date',true)));
 		}
 		echo '<div class"TimeRange-Post">';
 		echo '<table>'.PHP_EOL;				  
