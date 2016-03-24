@@ -35,11 +35,11 @@ class TimeRange_post {
 		// Set Default Dates
 		$start_date = $end_date = date('Y-m-d', time());
 		// Get Date Values from DB
-		if( intval(get_post_meta($post->ID,'event_start_date',true)) > 0 ) {
-			$start_date = date('Y-m-d',intval(get_post_meta($post->ID,'event_start_date',true)));
+		if( intval(get_post_meta($post->ID,'post_start_date',true)) > 0 ) {
+			$start_date = date('Y-m-d',intval(get_post_meta($post->ID,'post_start_date',true)));
 		} 
-		if( intval(get_post_meta($post->ID,'event_end_date',true)) > 0 ) {
-			$end_date = date('Y-m-d',intval(get_post_meta($post->ID,'event_end_date',true)));
+		if( intval(get_post_meta($post->ID,'post_end_date',true)) > 0 ) {
+			$end_date = date('Y-m-d',intval(get_post_meta($post->ID,'post_end_date',true)));
 		}
 		echo '<div class"TimeRange-Post">';
 		echo '<table>'.PHP_EOL;				  
@@ -52,8 +52,8 @@ class TimeRange_post {
 		echo ' </td>'.PHP_EOL;
 		echo ' </tr>'.PHP_EOL;
 		echo ' <tr>'.PHP_EOL;
-		echo '  <td><input type="date" name="event_start_date" class="date" value="'.$start_date.'"/></td>'.PHP_EOL;
-		echo '  <td><input type="date" name="event_end_date" class="date" value="'.$end_date.'"/></td>'.PHP_EOL;
+		echo '  <td><input type="date" name="post_start_date" id="post_start_date" class="date" value="'.$start_date.'"/></td>'.PHP_EOL;
+		echo '  <td><input type="date" name="post_end_date" id="post_end_date" class="date" value="'.$end_date.'"/></td>'.PHP_EOL;
 		echo ' </tr>'.PHP_EOL;
 		echo '</table>'.PHP_EOL;
 		echo '</div>';

@@ -650,3 +650,4 @@ div.TimeRange-Post .ui-widget-shadow {
 	filter: Alpha(Opacity=30); /* support: IE8 */
 	border-radius: 8px;
 }
+div.TimeRange-Post .ui-icon { text-indent: 0; }

@@ -1,9 +1,9 @@
 jQuery(function() {
   if ( jQuery('[type="date"]').prop('type') != "date" ) { 
       jQuery('[type="date"]').datepicker({
-        prevText: '&#x3c;zurück', prevStatus: '',
+        prevText: '<span class="dashicons dashicons-arrow-left"></span>', prevStatus: '',
         prevJumpText: '&#x3c;&#x3c;', prevJumpStatus: '',
-        nextText: 'Vor&#x3e;', nextStatus: '',
+        nextText: '<span class="dashicons dashicons-arrow-right"></span>;', nextStatus: '',
         nextJumpText: '&#x3e;&#x3e;', nextJumpStatus: '',
         currentText: 'heute', currentStatus: '',
         todayText: 'heute', todayStatus: '',
